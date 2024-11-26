@@ -1,0 +1,44 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Navigation Bar Example</title>
+    <script defer src="https://cdn.jsdelivr.net/npm/chart.js"></script>
+    <link rel="stylesheet" href="src/styles.css" />
+  </head>
+  <body>
+    <nav class="navbar">
+      <div class="logo">Stock Display</div>
+      <ul class="nav-links">
+        <li><a href="index.html">Home</a></li>
+        <li><a href="#Nasdaq">Nasdaq</a></li>
+        <li><a href="#S&P500">S&P500</a></li>
+        <li><a href="#Russell2000">Russell2000</a></li>
+      </ul>
+    </nav>
+
+    <h1 style="color:gold">Nasdaq 100 Stock Data</h1>
+</br>
+</br>
+<div class="display-ratio">
+    <div style="margin-left:1rem">
+    <label for="stock-select" style="color:gold">Select a stock:</label>
+    <select id="stock-select" >
+
+    </select>
+
+</br>
+</br>
+</br>
+
+    <div id="stock-display" style>Select a stock to see data and the graph.</div>
+</div>
+
+    <div id="chart-container">
+      <canvas id="stock-chart"></canvas>
+    </div>
+</div>
+    <script src="src/index.js"></script>
+  </body>
+</html>
